@@ -136,4 +136,30 @@
   testModule.incrementCounter()
   testModule.resetCounter()
   ```
+  
+  ```javascript
+  const Namespace = (() => {
+     // Module pattern template
+     let myPrivateVar, myPrivateMethod
+
+     // a private counter variable
+     myPrivateVar = 0
+
+     // a private function which logs any arguments
+     myPrivateMethod = foo => console.log(foo)
+
+     return {
+         // a public variable
+         myPulicVar: 'foo',
+
+         // a public function utilizing privates
+         myPublicFunction: bar => {
+            myPrivateVar++
+            
+            // Cal our private method using bar
+            myPrivateMethod(bar)
+         }         
+     }
+  })()
+  ```
 
