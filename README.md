@@ -119,9 +119,9 @@
    myObjectLiteral.property = 'someValue'
    ```
 1. The Module Pattern
-  ```javascript
-  // selfcontained module
-  const testModule = const testModule = (() => {
+   ```javascript
+   // selfcontained module
+   const testModule = const testModule = (() => {
       let counter = 0;
       return {
          incrementCounter: () => counter++,
@@ -130,15 +130,15 @@
             counter = 0
          }
       }
-  })();
-  
-  // usage
-  testModule.incrementCounter()
-  testModule.resetCounter()
-  ```
-  
-  ```javascript
-  const Namespace = (() => {
+   })();
+
+   // usage
+   testModule.incrementCounter()
+   testModule.resetCounter()
+   ```
+
+   ```javascript
+   const Namespace = (() => {
      // Module pattern template
      let myPrivateVar, myPrivateMethod
 
@@ -155,11 +155,11 @@
          // a public function utilizing privates
          myPublicFunction: bar => {
             myPrivateVar++
-            
+
             // Cal our private method using bar
             myPrivateMethod(bar)
          }         
      }
-  })()
-  ```
+   })()
+   ```
 
