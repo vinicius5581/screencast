@@ -36,13 +36,13 @@
    // get
    const value = newObject.somekey
    
-   2. Square bracket syntax
+   // 2. Square bracket syntax
    //set
    newObject['someKey'] = 'Hello World'
    // get
    const value = newObject['someKey']
    
-   3. Object.defineProperty
+   // 3. Object.defineProperty
    // set
    Object.defineProperty(newObject, 'someKey', {value: 'Hello World', writable: true, enumerable: true, configurable: true})
    
@@ -63,7 +63,7 @@
    defineProp(person, 'dateOfBirth', '1981')
    defineProp(person, 'hasBeard', false)
    
-   4. Object.defineProperties
+   // 4. Object.defineProperties
    // set
    Object.defineProperties(newObject, {
        'somekey': {
@@ -75,4 +75,11 @@
            writable: false
        }
    })
+   ```
+   1. Using create method to inherit
+   ```javascript
+   const drriver = Object.create(person)
+   defineProp(drive, 'topSpeed', '100mph')
+   console.log(driver.dateOfBirth) // inherited from person
+   console.log(driver.topSpeed)
    ```
