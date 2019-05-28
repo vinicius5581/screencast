@@ -93,6 +93,17 @@
    
    Car.prototype.toString = () => `${this.model} has done ${this.miles} miles`
    
+   // using class
+   
+   class Car = {
+      constructor(model, year, miles) {
+         this.model = model
+         this.year = year
+         this.miles = miles  
+      }
+      toString = () => `${this.model} has done ${this.miles} miles`
+   }
+   
    const civic = new Car('Honda Civic', 2009, 20000)
    const mondeo = new Car('For Mondeo', 2010, 5000)
    console.log(civic.toString())
