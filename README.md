@@ -84,7 +84,7 @@
    console.log(driver.topSpeed)
    ```
 1. Constructors
-   ```
+   ```javascript
    const Car = (model, year, miles) => {
       this.model = model
       this.year = year
@@ -109,3 +109,31 @@
    console.log(civic.toString())
    console.log(mondeo.toString())
    ```
+1. Object Literals
+   ```javascript
+   const myObjectLiteral = {
+      variableKey: variableValue,
+      functionKey: () => {}
+   }
+   
+   myObjectLiteral.property = 'someValue'
+   ```
+1. The Module Pattern
+  ```javascript
+  // selfcontained module
+  const testModule = const testModule = (() => {
+      let counter = 0;
+      return {
+         incrementCounter: () => counter++,
+         resetCounter: () => {
+            console.log(`coutner value prior to reset: ${counter}`)
+            counter = 0
+         }
+      }
+  })();
+  
+  // usage
+  testModule.incrementCounter()
+  testModule.resetCounter()
+  ```
+
