@@ -165,34 +165,33 @@
 
 1. The Revealing Module Pattern
    ```javascript
-   const myRevealingModule = (function () {
+   const myRevealingModule = (() => {
+
+      let privateVar = "Ben Cherry",
+         publicVar = "Hey there!";
+
+      const privateFunction = () => {
+         console.log(`Name: ${privateVar}`);
+      }
+
+      const publicSetName = strName => {
+         privateVar = strName;
+      }
+
+      const publicGetName = () => {
+         privateFunction();
+      }
+
+      // Reveal public pointers to
+      // private functions and properties
+
+      return {
+         setName: publicSetName,
+         greeting: publicVar,
+         getName: publicGetName
+      };
+
+   })();
  
-        let privateVar = "Ben Cherry",
-            publicVar = "Hey there!";
- 
-        function privateFunction() {
-            console.log( "Name:" + privateVar );
-        }
- 
-        function publicSetName( strName ) {
-            privateVar = strName;
-        }
- 
-        function publicGetName() {
-            privateFunction();
-        }
- 
- 
-        // Reveal public pointers to
-        // private functions and properties
- 
-        return {
-            setName: publicSetName,
-            greeting: publicVar,
-            getName: publicGetName
-        };
- 
-    })();
- 
-    myRevealingModule.setName( "Paul Kinlan" );
-    ```
+   myRevealingModule.setName( "Vini" );
+   ```
