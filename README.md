@@ -164,7 +164,7 @@
    ```
 
 1. The Revealing Module Pattern
-   ```
+   ```javascript
    const myRevealingModule = (function () {
  
         let privateVar = "Ben Cherry",
