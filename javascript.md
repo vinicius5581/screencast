@@ -10,6 +10,11 @@
 - IIFE
 - Closures
 - Module Pattern
+- Apply, call, and bind
+- Polymorphism
+- Asynchronous
+- Promises
+- Async & Await
 
 
 
