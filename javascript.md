@@ -1,3 +1,21 @@
+- Scope
+- Currying
+- Memoization
+- Callback function
+- ES6 Class
+- Prototype
+- Recursion
+- Hoisting
+- First-class objects
+- IIFE
+- Closures
+- Module Pattern
+
+
+
+- https://developer.mozilla.org/en-US/docs/Glossary
+
+
 ----
 
 1. Object Creation
