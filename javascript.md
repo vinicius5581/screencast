@@ -18,6 +18,8 @@
 
 
 
+- http://pythontutor.com/javascript.html#mode=edit
+- https://tylermcginnis.com/javascript-visualizer/
 - https://developer.mozilla.org/en-US/docs/Glossary
 
 
