@@ -74,6 +74,39 @@ Event Loop
 
 Dynamic Typing (vs Static Typing)
 
+------
+This
+
+```javascript
+function bike() {
+  console.log(this.name);
+}
+
+var name = "Ninja";
+var obj1 = { name: "Pulsar", bike: bike };
+var obj2 = { name: "Gixxer", bike: bike };
+
+bike();           // "Ninja"
+obj1.bike();      // "Pulsar"
+obj2.bike();      // "Gixxer"
+```
+
+
+```javascript
+var obj1 = {
+  name: "Pulsar",
+  bike: function() {
+    console.log(this.name);
+  }
+}
+var obj2 = { name: "Gixxer", bike: obj1.bike };
+var name = "Ninja";
+var bike = obj1.bike;
+
+bike();           // "Ninja"
+obj1.bike();      // "Pulsar"
+obj2.bike();      // "Gixxer"
+```
 ---
 Esc
 
