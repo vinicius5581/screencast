@@ -1,4 +1,5 @@
 Escopo
+Onde uma variabvel esta disponivel no codigo
 ___
 
 - Syntax Parsers
@@ -50,6 +51,10 @@ https://www.dropbox.com/s/o4m4mzppg8dc7pc/Screenshot%202019-07-08%2023.03.27.png
 ---
 
 The scope chain
+
+Scope, ES6 and let
+
+
 
 ---
 Esc
