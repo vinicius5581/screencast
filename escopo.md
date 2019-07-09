@@ -55,6 +55,19 @@ The scope chain
 Scope, ES6 and let
 
 
+Asynchronous: More than one at a time
+
+
+----
+
+Callback
+
+
+Execution Stack
+
+Event Queue: Click, Http Request
+
+Event Loop
 
 ---
 Esc
