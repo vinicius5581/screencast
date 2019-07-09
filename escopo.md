@@ -69,6 +69,11 @@ Event Queue: Click, Http Request
 
 Event Loop
 
+
+----
+
+Dynamic Typing (vs Static Typing)
+
 ---
 Esc
 
