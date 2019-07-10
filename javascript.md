@@ -1,3 +1,4 @@
+1. datatypes
 1. var, let & const 
 1. Funções
 1. Escopo
