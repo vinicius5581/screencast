@@ -1,3 +1,18 @@
+1. var, let & const 
+1. Funções
+1. Escopo
+1. Hoisting
+1. Closures
+1. This
+1. Apply, call, and bind
+1. Call stack
+1. Heap
+1. Promises queue
+1. Events queue
+1. Events loop
+
+
+
 - Scope
 - Currying
 - Memoization
