@@ -1,0 +1,1 @@
+- Weekends on different cities stopping randomn people on the street and asking questions about Javascript. Right answers will get prises.
